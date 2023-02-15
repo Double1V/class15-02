@@ -1,8 +1,9 @@
 public class Solution {
-    public static int century(int number) {
-        if ((number % 100) == 0) {
-            return number / 100;
+    public static long sumCubes(long n) {
+        int sum = 0;
+        for (int i = 0; i <= n; i++) {
+            sum = sum + i * i * i;
         }
-        return 1 + number / 100;
+        return sum;
     }
 }
